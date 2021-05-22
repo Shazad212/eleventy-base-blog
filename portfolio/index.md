@@ -1,10 +1,10 @@
 ---
 layout: layouts/post.njk
-title: About Me
+title: Portfolio
 templateClass: tmpl-post
 eleventyNavigation:
-  key: About Me
-  order: 3
+  key: Portfolio
+  order: 4
 ---
 
 I enjoy learning to programme. 
