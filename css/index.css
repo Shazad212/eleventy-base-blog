@@ -33,11 +33,29 @@ p,
 .tmpl-post li {
   line-height: 1.45;
 }
+
+
 a[href] {
   color: var(--blue);
 }
+
+
 a[href]:visited {
   color: var(--navy);
+}
+
+.content-wrapper {
+  min-height: 100vh;
+  position: relative;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.home a[href] {
+  color: white;
 }
 main {
   padding: 1rem;
@@ -45,8 +63,18 @@ main {
 main :first-child {
   margin-top: 0;
 }
+.header--background {
+  background-color: rgb(80, 74, 74);
+  color: white;
+}
+
+.header_content {
+  text-align: center;
+  padding: 20px 20px 0;
+}
 header {
-  border-bottom: 1px dashed var(--lightgray);
+  display: flex;
+  align-items: center;
 }
 header:after {
   content: "";
@@ -143,6 +171,7 @@ code {
 }
 .nav-item a[href]:not(:hover) {
   text-decoration: none;
+  color: white;
 }
 .nav-item-active {
   font-weight: 700;
@@ -161,13 +190,13 @@ code {
   counter-increment: start-from -1;
   line-height: 1.8;
 }
-.postlist-item:before {
+/* .postlist-item:before {
   display: inline-block;
   pointer-events: none;
   content: "" counter(start-from, decimal-leading-zero) ". ";
   line-height: 100%;
   text-align: right;
-}
+} */
 .postlist-date,
 .postlist-item:before {
   font-size: 0.8125em; /* 13px /16 */
@@ -244,4 +273,13 @@ a[href].direct-link:focus:visited,
 :hover > a[href].direct-link,
 :hover > a[href].direct-link:visited {
   color: #aaa;
+}
+.footer_list {
+list-style: none;
+display: flex;
+justify-content: center;
+}
+.footer_list_item {
+margin:0 20px ;
+font-size: 50px;
 }
