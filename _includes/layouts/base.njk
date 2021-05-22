@@ -10,9 +10,15 @@
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  rel="stylesheet"
+/>
   </head>
   <body>
-    <header>
+<div class="container-fluid p-0 content-wrapper">
+  <div class="header--background d-flex justify-content-center flex-column align-items-center pb-5 pl-5 pr-5 mb-5">
+    <header class="mb-4">
       <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
 
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
@@ -21,7 +27,12 @@
         <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
       {%- endfor %}
       </ul>
-    </header>
+    </header> 
+    <div class="header_content">
+    <h1 class="header_content-title">Shazad's Blog</h1>
+    <p class="header_content-text">Welcome to my Blog</p>
+    </div>
+    </div>
     
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
 
@@ -32,8 +43,16 @@
       {{ content | safe }}
     </main>
 
-    <footer></footer>
-
+    <footer>
+    <div class="footer_container">
+    <ul class="footer_list">
+    <li class="footer_list_item"><a href="www.facebook.com">  <i class="fab fa-facebook-f"></i></a></li>
+    <li class="footer_list_item"><a href="www.twitter.com"> <i class="fab fa-twitter"></i> </a></li>
+    <li class="footer_list_item"><a href="www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+    </div>
+    </footer>
+</div>
     <!-- Current page: {{ page.url | url }} -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   </body>
