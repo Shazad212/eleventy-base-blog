@@ -10,6 +10,10 @@ templateClass: tmpl-post
 <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
 {%- endfor %}
 
+const Image = require("@11ty/eleventy-img");
+
+
+
 {{ content | safe }}
 
 {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
