@@ -67,6 +67,10 @@ main :first-child {
   background-color: rgb(80, 74, 74);
   color: white;
   background-image: url(https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+background-repeat:no-repeat ;
+width: 100%;
+background-position: center;
+background-size: cover;
 }
 
 .header_content {
