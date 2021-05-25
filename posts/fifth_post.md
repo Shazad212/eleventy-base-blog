@@ -14,5 +14,3 @@ Here is a screenshot of my Github repositary of my Eleventy Blog.
 <div class="screenshot">
 <img src="/img/Screenshot 2021-05-23 at 20.32.47.png" alt="screenshot">
 </div>
-
-
