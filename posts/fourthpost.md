@@ -41,7 +41,6 @@ I have demonstrated below a variety of the most commonly used <b>Input</b> eleme
         <option value="Italy">Italy</option>
     </optgroup>
 </select>
-    
 <br>
     <br>
     <p>Select which magazine's you'd like to subscribe to</p>
