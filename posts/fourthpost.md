@@ -17,6 +17,7 @@ I have demonstrated below a variety of the most commonly used <b>Input</b> eleme
     <input type="text" id="last_name" name="last_name" required="required" minlength="2">
     <br>
     <br>
+    <br>
     <label for="email">Email:</label>
     <input type="email" id="email" required="required">
     <br>
