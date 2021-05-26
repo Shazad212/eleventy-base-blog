@@ -10,11 +10,12 @@ In this blog post, I have created a form using the HTML <b>Form</b> element. The
 
 I have demonstrated below a variety of the most commonly used <b>Input</b> elements found on most forms that most people would have come across previously. 
 <br>
-<form>
+<form name="contact" method="POST" data-netlify="true">
     <label for="first_name">First Name</label>
-    <input type="text" id="first_name" name="first_name" required="required" minlength="2"> 
+    <input type="text" id="first_name" name="first_name" required="required" minlength="4"> 
     <label for="last_name">Last Name</label>
-    <input type="text" id="last_name" name="last_name" required="required" minlength="2">
+    <input type="text" id="last_name" name="last_name" required="required" minlength="4">
+
     <br>
     <br>
     <br>
