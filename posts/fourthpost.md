@@ -8,7 +8,7 @@ layout: layouts/post.njk
 
 In this blog post, I have created a form using the HTML <b>Form</b> element. The <b>Form</b> element is a container for different types of <b>Input</b> elements, such as: text fields, checkboxes, passwords, radio buttons, and many more. 
 
-I have demonstrated below a variety of the most commonly used <b>Input</b> elements found on most forms that most people would have come across previously. 
+I have included the Netlify attribute to the form tag, so once the data is submitted, the submission is received on my Netlify site.  
 <br>
 <form name="contact" method="POST" data-netlify="true">
     <label for="first_name">First Name</label>
