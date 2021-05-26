@@ -12,9 +12,9 @@ I have demonstrated below a variety of the most commonly used <b>Input</b> eleme
 <br>
 <form>
     <label for="first_name">First Name</label>
-    <input type="text" id="first_name" name="first_name" required="required" minlength="3"> 
+    <input type="text" id="first_name" name="first_name" required="required" minlength="2"> 
     <label for="last_name">Last Name</label>
-    <input type="text" id="last_name" name="last_name" required="required" minlength="3">
+    <input type="text" id="last_name" name="last_name" required="required" minlength="2">
     <br>
     <br>
     <label for="email">Email:</label>
@@ -41,7 +41,6 @@ I have demonstrated below a variety of the most commonly used <b>Input</b> eleme
         <option value="Italy">Italy</option>
     </optgroup>
 </select>
-    
 <br>
     <br>
     <p>Select which magazine's you'd like to subscribe to</p>
