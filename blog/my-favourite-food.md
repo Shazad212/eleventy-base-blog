@@ -1,5 +1,5 @@
 ---
-layout: layouts/post.njk
+layout: layouts/blog.njk
 tags: blog
 title: My Food Blog
 date: 2021-05-27T14:50:46.621Z

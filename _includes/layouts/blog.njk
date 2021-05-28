@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-blog
+---
+<h1>{{ title }}</h1>
+<p>
+  <span style="font-weight: bold;">Rating:</span>
+  {{ rating }}
+</p>
+
+
+
+<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+{%- for tag in tags | filterTagList -%}
+{%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
+<a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+{%- endfor %}
+
+
+
+
+<img src="{{ thumbnail | url }}"/>
+{{ content | safe }}
+
+{%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+{%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+{%- if nextPost or previousPost %}
+
+{%- endif %}
